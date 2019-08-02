@@ -1,0 +1,7 @@
+record("ao", "$(P)$(R)Brightness") {
+    field(HOPR, "1")
+    field(LOPR, "0")
+    field(VAL,  "0.9")
+    field(PINI, "YES")
+    field(SCAN, "Passive")
+}
