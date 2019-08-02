@@ -1,0 +1,11 @@
+[Unit]
+Description=RTD Temperature Monitor IOC
+
+[Service]
+ExecStart=/bin/bash -c 'sleep 5; screen -S siocrtd -D -m ./st.cmd'
+WorkingDirectory=/home/pi/iocapps/rtd/iocBoot/siocrtd
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

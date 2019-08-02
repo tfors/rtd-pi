@@ -1,0 +1,12 @@
+[Unit]
+Description=Microdot temperature display
+After=siocrtd.service
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u ./temperature.py'
+WorkingDirectory=/home/pi/iocapps/rtd/op/
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
